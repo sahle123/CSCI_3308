@@ -1,0 +1,9 @@
+Solution to copy and paste problem:
+
+Open terminal and run the following commands:
+
+$ killall VBoxClient
+$ VBoxClient-all
+
+
+...Done :)

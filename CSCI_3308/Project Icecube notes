@@ -1,0 +1,134 @@
+Project Icecube notes:
+
+- We'll be using Ruby version 1.9.3
+- Jacob will be managing the Rdoc 
+- Spent already 26 hours and have made virtually no progress... I'm fucking done with this
+- RVM is useful for managing different ruby versions
+	============================
+	RVM commands:
+	- rvm list
+	- rvm rubies // Does not work
+	- rvm use ruby-1.9.3-p448
+	- rvm --default use 1.9.2
+	- rvm use 1.9.3 --default
+	- //** To log into shell **//
+		- /bin/bash --login
+	- http://ryanbigg.com/2010/12/ubuntu-ruby-rvm-rails-and-you/
+	============================
+- Rake commands are useful for migrating databases:
+	Rake commands:
+	- bundle exec rake -T // Shows all rake commands
+	- rake db:migrate
+	- rake db:test:prepare
+	- To refresh database:
+		- rake db:drop
+		- rake db:create
+		- rake db:migrate // You must call migrate after new MVC are/is made.
+		- rake db:test:prepare // You NEED this for cucumber to work properly
+	===========================
+- Rdoc commands:
+	- rdoc // Generates all rdoc files
+	-
+	============================
+- Bundle commands:
+	- bundle install <--name>
+	- bundle update
+	- bundle exec cucumber
+	============================
+- Rails commands:
+	- rails server (or rails s) 
+	- rails generate scaffold <other parameters> // This is helpful for making anything in MVC
+    - rails console
+    - rails dbconsole
+    - rails new <app_name>
+	============================
+- Heroku commands:
+	- heroku open
+	- heroku login
+	- heroku run rake db:reset
+	- heroku run rake assets:precompile
+
+
+
+11/17/13 Notes:
+- Fixed Gemfile. Using same one as assigment 4's 
+- Fixed Gemfile.lock.
+- Deemed some tables in the schema superflous ("e.g. slogan and birthday")
+
+12/04/13 Notes: (No longer valid)
+- Types of games:
+	- Timed
+	- Moves (limited amount of moves)
+	- none
+- Made heavy modifications to rails project
+	- deleted old frame work and started new. Too much useless crap
+	- Working with 3 models right now: user, comments, level_info
+
+12/13/13 Notes:
+- Sign in and Sign out missing when signed in.
+	- Fixed. Color was too dark. Set to white.
+-
+-------------------------------------------------------------------------------
+Project overview:
+
+
+Project Proposal
+a) Overview:
+	The goals of this project is to create a puzzle web game that allows users to create and manage the levels for it. A large aspect of this project is the community and how it interacts with one another.
+
+b1) Models:
+	User
+		Handles all the user info and processing. Username, email, slogan, password_digest, remember_token, admin
+	Level_info
+		Handles the logic for viewing the level. Ratings, ID, author, type and restriction
+
+	Level_play
+		Model for the actual game logic
+
+	Comment
+		Holds user's ID, content of post and the post's ID itself.
+
+	// Favorites (removed for now)
+	
+b2) Views:
+	Homepage/News 
+		This view will show general information about the game while giving insight on any updates done upon it. These updates will be shown in blog format and allow for each update post to be commented upon by the users with a link that will expand upon each Update.
+
+	Account settings 
+		Holds all account information and what the user can modify on his/her account.
+	
+	Update Post
+		Shows an expanded form of each update post and the comments made by each user in response.
+	
+	Login/Sign Up
+	
+	User Page 
+		Shows general information about the user with a table showing all the levels the user created and another table showing all the scores the user received from playing other levels.
+	
+	User Messages and Updates
+		This page shows any updates a user may have received personally from another user either through private messages or a comment added to a post done by the user.
+	
+	Level List
+		This view displays a list of levels created by the users. This will be done with a table with each column labelled [Level Name, Level Type, Highest Score Achieved, Creator Name, User Ratings, Date Added, More]
+	
+	Level
+		This view shows more information on a given level selected and comments given by each individual user.
+		Below it will be four buttons, two of them will only visible to the creator. The buttons that are visible to all the users will be "Play" and "Back". The Play button will link to the Game view, and the back button will link back to the Level List view with the previous sort settings applied to the table. The other two will only be visible to the user that create the level, these buttons are "Edit" and "Delete."
+	
+	Game
+		Displays a selected level from the database using HTML5 Canvas and WebGL.
+		
+	Level Editor/Level Creator
+		Displays a level editor using HTML5 Canvas and WebGl with on the side a list of tools for building the level.
+		Below it will be a list of options to help define the level. Then finally a submit button.
+	
+	More views will most likely be added as needed as the project progresses.
+		
+c) User roles and stakeholders:
+	Moderators, Users 
+	
+d) Group members: 
+	Brian Bauer, Jacob Rails, Sahle Alturaigi
+e)
+	We're all currently taking graphics so anything dealing with openGl will not require us to learn anything excessive to the course material.
+	

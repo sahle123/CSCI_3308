@@ -1,0 +1,16 @@
+Notes on 10/23 Lab (CSCI 3308)
+
+- learning how to use pivotal tracker (tool for managing online stories)
+
+- Cucumber is designed to allow you to execture feature documentation written in plain text (known as "stories"). Cucumber is mostly useful for BDD (behavoir driven design).
+
+- Cucumber can be run by typing in <cucumber> in the top level directory of where it was installed.
+
+- A scenario in Cucumber is comprised of 3 steps. Each step is a short sentence that falls into one of the three familiar BDD categories:
+
+	Given (setting up a precondition for the scenario)
+	When (execture an action in the application under test)
+	Then (assert the desired outcome)
+	And/But (extends the Then step)
+
+- Capybara is an integration testing tool for rack based web applications. It simulates how a user would interact with a website.

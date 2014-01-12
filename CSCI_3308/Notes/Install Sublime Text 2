@@ -1,0 +1,11 @@
+Here are the instructions to install Sublime text 2 onto Ubuntu
+(Taken from: http://www.codeproject.com/Articles/582849/InstallingplusSublimeplusTextplus2plusonplusLinuxp)
+
+Add the Sublime Text 2 Repository to your Synaptic Package Manager:
+	sudo add-apt-repository ppa:webupd8team/sublime-text-2
+
+Update:
+	sudo apt-get update
+
+Install Sublime Text:
+	sudo apt-get install sublime-text

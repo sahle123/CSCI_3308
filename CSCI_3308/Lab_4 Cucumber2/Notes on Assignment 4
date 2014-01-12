@@ -1,0 +1,23 @@
+Notes on Assignment 4
+
+- Always run bundle commands as "bundle exec <commandName>"
+- To create tags to see the changes in commits use the follow commands:
+	- git tag <tag name> 
+	- git diff <tag name>    // This will show the differences this commit
+	- git push origin -tags  // pushes tags to remote repo
+
+- The line of code:
+		
+		Given /^(?:|I ) am on (.+)$/ 
+
+  is a regular expression that captures everything after "am on" until the end of line (EoL)
+
+- Becareful with whitespaces in cucumber feature files. Some problems may arise from parser errors from the regexes due to these extra whitespaces.
+
+- The Rails flunk method unsures an error and spits out a message. Useful at the start of your cucumber. flunk <msg>
+
+- The =~ operator is used to match regular expressions against strings
+
+- The Cucumber <steps> method matches any steps to any step definition using regular expressions
+
+- 

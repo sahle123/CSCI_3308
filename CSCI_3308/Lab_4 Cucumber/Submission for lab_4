@@ -1,0 +1,59 @@
+Sahle A. Alturaigi
+
+2.a) complete
+
+2.b)
+- velocity = 10.
+- The velocity is the amount of points to be completed everyday. The points are determined by the difficulty of each user story i.e. 1 is the lowest and 3 is the highest.
+
+2.c) complete
+
+2.d) For our first iteration, we have 0 poins in our current column and a velocity of 10. Therefore, all user stories we allocate to backlog will be placed in current until the velocity for this iteration is satisfied, that is, at least 10 points in current column.
+
+2.e) It is worth mentioning that the Low-Fidelity sketch we were asked to draw does not directly corelate with any of the user stories.
+
+3.) Complete
+
+4.) Capybara is an integration test tool for rack (ruby on rails) based web applications. It simulates how a user would interact with a website. Source: http://rubygems.org/gems/capybara
+
+5.) Feature: User should be able to find Movies by Rating.
+	
+	Scenario: User should find Men in Black by Rating.
+		Given I am on the RottenPotatoes homepage, when I follow Add New Movie,
+		Then I should be on the Create Movie page.
+		When I fill in Title with Men in Black, And I select PG-13 from Rating,
+		and I press Save Changes, Then I should be in the RottenPotatoes home
+		page, and I should see Men in Black.
+
+	Step_def:
+		Given(/^I am on the RottenPotatoes homepage,$/) do
+  		pending # express the regexp above with the code you wish you had
+		end
+
+		When(/^I follow Add New Movie,$/) do
+  		pending # express the regexp above with the code you wish you had
+		end
+
+		Then(/^I should be on the Create Movie page\.$/) do
+  		pending # express the regexp above with the code you wish you had
+		end
+
+		When(/^I fill in Title with Men in Black,$/) do
+  		pending # express the regexp above with the code you wish you had
+		end
+
+		When(/^I select PG\-(\d+) from Rating,$/) do |arg1|
+  		pending # express the regexp above with the code you wish you had
+		end
+
+		When(/^I press Save Changes,$/) do
+  		pending # express the regexp above with the code you wish you had
+		end
+
+		Then(/^I should be in the RottenPotatoes homepage,$/) do
+  		pending # express the regexp above with the code you wish you had
+		end
+
+		Then(/^I should see Men in Black\.$/) do
+  		pending # express the regexp above with the code you wish you had
+		end

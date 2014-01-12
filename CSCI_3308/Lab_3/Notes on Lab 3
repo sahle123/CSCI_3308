@@ -1,0 +1,11 @@
+Notes on Lab 3:
+
+-Spent 22 hours so far...
+
+-Took up and down arrows from the first website. They are stored in the app/assets
+folder under the images directory AND in the public/images folder.
+
+-Got some help with part b on this website: 
+ http://railscasts.com/episodes/228-sortable-table-columns 
+ http://railscasts.com/episodes/52-update-through-checkboxes
+ Received some help from Robert Werthman.

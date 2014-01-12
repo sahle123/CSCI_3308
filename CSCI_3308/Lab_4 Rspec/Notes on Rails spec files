@@ -1,0 +1,20 @@
+Notes on Rails spec files
+======
+
+How the files should be oriented.
+
+	File hierarchy
+
+	File
+	 |
+	 |---lib--->(implementation file/Class file)
+	 |
+	 |---spec--->lib--->(spec file)
+
+
+>In order to get the spec implementation working, run `sudo gem install rspec` at the top level folder. Next you must type `rspec --init` to get the spec_helper.rb file.
+>>To run the spec files, use the command `rspec` at the top level folder, or you can specify the location directory explicitly by `rspec <filename>`
+
+---------------------------------------------------
+
+Check the code for more in-depth examples.
